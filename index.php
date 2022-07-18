@@ -1,7 +1,6 @@
 <?php
 
     $rows = $_POST["rows"];
-    var_dump($rows);
     $data = array(
                 array(
                     "name"=>"ACADEMIA DE LA MAGISTRATURA",
