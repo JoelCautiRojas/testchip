@@ -59,7 +59,8 @@
                 )
             );
             array_push($res,$rw);
+            $respuesta = array("tasas" => $res)
         }
-        echo json_encode($res,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
+        echo json_encode($respuesta,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
     }
 ?>
