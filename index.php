@@ -34,6 +34,7 @@
                 )
             );
     if($rows == ""){
+        header('Content-Type: application/json');
         echo json_encode($data,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
     }else{
         $res = array();
@@ -60,7 +61,8 @@
             );
             array_push($res,$rw);
             $respuesta = array("tasas" => $res);
+            header('Content-Type: application/json');
+            echo json_encode($respuesta,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
         }
-        echo json_encode($respuesta,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
     }
 ?>
