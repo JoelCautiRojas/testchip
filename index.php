@@ -1,5 +1,5 @@
 <?php
-
+    header('Content-Type: application/json');
     $rows = $_GET["rows"];
     $data = array(
                 "tasas"=>array(
@@ -33,10 +33,7 @@
                     )
                 )
             );
-    if($rows == ""){
-        header('Content-Type: application/json');
-        echo json_encode($data,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
-    }else{
+    if($rows != ""){
         $res = array();
         for($i = 1; $i <= $rows; $i++){
             $rw = array(
@@ -60,9 +57,9 @@
                 )
             );
             array_push($res,$rw);
-            $respuesta = array("tasas" => $res);
-            header('Content-Type: application/json');
-            echo json_encode($respuesta,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
         }
+        $data = array("tasas" => $res);
+        echo json_encode($data,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
     }
+    echo json_encode($data,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
 ?>
