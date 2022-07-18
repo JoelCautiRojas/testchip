@@ -1,6 +1,6 @@
 <?php
 
-    $rows = $_POST["rows"];
+    $rows = $_GET["rows"];
     $data = array(
                 "tasas"=>array(
                     array(
