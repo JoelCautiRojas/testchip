@@ -1,3 +1,5 @@
 <?php
-    echo "Hola Mundo";
+    $rows = $_POST["rows"];
+    var_dump($rows);
+    echo "Hola Mundo amiguitos " . $rows;
 ?>
