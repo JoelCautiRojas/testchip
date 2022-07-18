@@ -2,31 +2,33 @@
 
     $rows = $_POST["rows"];
     $data = array(
-                array(
-                    "name"=>"ACADEMIA DE LA MAGISTRATURA",
-                    "id"=>"29-0",
-                    "operation"=>"29",
-                    "txn"=>"0",
-                    "tramites"=>array(
-                        array(
-                            "name"=>"Pagos de la Academia de la Magistratura",
-                            "id"=>"14-4",
-                            "operation"=>"14",
-                            "txn"=>"4"
+                "tasas"=>array(
+                    array(
+                        "name"=>"ACADEMIA DE LA MAGISTRATURA",
+                        "id"=>"29-0",
+                        "operation"=>"29",
+                        "txn"=>"0",
+                        "tramites"=>array(
+                            array(
+                                "name"=>"Pagos de la Academia de la Magistratura",
+                                "id"=>"14-4",
+                                "operation"=>"14",
+                                "txn"=>"4"
+                            )
                         )
-                    )
-                ),
-                array(
-                    "name"=>"ESSALUD",
-                    "id"=>"26-0",
-                    "operation"=>"26",
-                    "txn"=>"0",
-                    "tramites"=>array(
-                        array(
-                            "name"=>"Pago de aportes a ESSALUD",
-                            "id"=>"13-4",
-                            "operation"=>"13",
-                            "txn"=>"4"
+                    ),
+                    array(
+                        "name"=>"ESSALUD",
+                        "id"=>"26-0",
+                        "operation"=>"26",
+                        "txn"=>"0",
+                        "tramites"=>array(
+                            array(
+                                "name"=>"Pago de aportes a ESSALUD",
+                                "id"=>"13-4",
+                                "operation"=>"13",
+                                "txn"=>"4"
+                            )
                         )
                     )
                 )
